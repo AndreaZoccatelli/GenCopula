@@ -18,7 +18,6 @@ import_strat_split <- function(path, name) {
   id_train <- c(sample(minority$id, s_min), sample(majority$id, s_maj))
   train <- df[id_train,]
   test <- df[-id_train,]
-  setClass("DB", representation(dataset = "data.frame", train_set = "data.frame", test_set = "data.frame"))
   DB <- new("DB", dataset = df, train_set = train, test_set = test) #collect into S4
   return(DB)
 }
