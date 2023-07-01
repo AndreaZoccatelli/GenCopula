@@ -1,0 +1,14 @@
+Package: GenCopula
+Type: Package
+Title: Generate synthetic data for augmentation using copulas
+Version: 0.1.0
+Author: Andrea Zoccatelli
+Maintainer: The package maintainer <azoccatellicomunicazione@gmail.com>
+Description: This is my first R package! Built for my thesis project: 
+    "Augmentation of tabular data with continuous features for binary imbalanced classification problems"
+Depends: copula, tidyverse, MASS, CORElearn,xgboost, randomForest, psych, GDAtools, magrittr    
+Imports: methods
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.1
